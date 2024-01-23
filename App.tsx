@@ -1,5 +1,5 @@
 import React from 'react'
-import theme from '@themes'
+import theme from './src/theme'
 import { Groups } from '@screens/Groups'
 import { Container } from '@screens/Groups/styles'
 import { ThemeProvider } from 'styled-components'
