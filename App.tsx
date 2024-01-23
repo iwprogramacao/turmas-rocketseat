@@ -1,6 +1,6 @@
 import React from "react"
 import { StyleSheet,  View } from 'react-native';
-import { Groups } from './src/screen/Groups';
+import { Groups } from '@screens/Groups';
 
 export default function App() {
   return (
