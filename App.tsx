@@ -1,13 +1,13 @@
-import React from "react"
-import { StyleSheet,  View } from 'react-native';
-import { Groups } from '@screens/Groups';
+import React from 'react'
+import { StyleSheet, View } from 'react-native'
+import { Groups } from '@screens/Groups'
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Groups/>
+      <Groups />
     </View>
-  );
+  )
 }
 
 const styles = StyleSheet.create({
@@ -17,4 +17,4 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-});
+})
