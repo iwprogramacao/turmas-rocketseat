@@ -1,20 +1,15 @@
 import React from 'react'
-import { StyleSheet, View } from 'react-native'
+import theme from '@themes'
 import { Groups } from '@screens/Groups'
+import { Container } from '@screens/Groups/styles'
+import { ThemeProvider } from 'styled-components'
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Groups />
-    </View>
+    <ThemeProvider theme={theme}>
+      <Container>
+        <Groups />
+      </Container>
+    </ThemeProvider>
   )
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-})
