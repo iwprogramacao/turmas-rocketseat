@@ -5,6 +5,7 @@ import { Highlight } from '@components/Highlight';
 import { GroupCard } from '@components/GroupCard';
 import { FlatList } from 'react-native';
 import { ListEmpty } from '@components/ListEmpty';
+import { Button } from '@components/Button';
 
 export function Groups() {
   const [groups, setGroups] = useState<string[]>(['Galera da Rocket']);
@@ -21,8 +22,9 @@ export function Groups() {
         ListEmptyComponent={() => (
           <ListEmpty message="Que tal cadastrar a primeira turma?" />
         )} // Renderização de lista vazia
-        contentContainerStyle={groups.length === 0 && { flex: 1 }}
+        contentContainerStyle={groups.length === 0 && { flex: 1 }} // Estilização do componente
       />
+      <Button title="Criar nova turma" />
     </Container>
   );
 }
