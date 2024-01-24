@@ -1,16 +1,17 @@
-import React from "react"
-import { View, Text, StyleSheet } from 'react-native';
+import React from 'react'
+import { Text, StyleSheet } from 'react-native'
+import { Container } from './styles'
 export function Groups() {
   return (
-    <View>
+    <Container>
       <Text style={styles.text}>Digite o seu e-mail</Text>
-    </View>
+    </Container>
   )
 }
 
 const styles = StyleSheet.create({
   text: {
     fontSize: 24,
-    color: "red"
+    color: 'red',
   },
-});
+})
