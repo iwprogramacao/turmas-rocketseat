@@ -1,17 +1,16 @@
 import React from 'react'
-import { Text, StyleSheet } from 'react-native'
 import { Container } from './styles'
+import { Header } from '@components/Header'
+import { Highlight } from '@components/Highlight'
+import { GroupCard } from '@components/GroupCard'
+
 export function Groups() {
   return (
     <Container>
-      <Text style={styles.text}>Digite o seu e-mail</Text>
+      <Header />
+      <Highlight title="Turmas" subtitle="Jogue com a sua turma" />
+
+      <GroupCard title="Galera do Ignite" />
     </Container>
   )
 }
-
-const styles = StyleSheet.create({
-  text: {
-    fontSize: 24,
-    color: 'red',
-  },
-})
